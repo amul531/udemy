@@ -1,0 +1,96 @@
+/*all pages*/
+/*anchor tag*/
+body {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	font-family: "Times New Roman";
+}
+
+.box {
+	border: 1px solid black;
+	margin-top: 5px;
+	background-color: rgba(191, 189, 186, 0.2);
+}
+
+header {
+	text-align: center;
+}
+
+h2 {
+	text-shadow: 3px 2px 10px #888888;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+footer {
+	clear: both;
+  	bottom: 0;
+	text-align: center;
+}
+
+/*index page*/
+nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+/*felxbox_images page*/
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container img {
+	width:350px;
+	height:400px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+.container img:hover {
+	transform: scale(1.1);
+}
+
+/*bootstrap-1 page*/
+.bootstrap_heading {
+	height: 100px; 
+	padding-top: 40px; 
+	color: white;
+}
+
+/*animate-layout page*/
+.grid_container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /*1fr 1fr;*/  /*repeat(2, 1fr);*/
+}
+
+.grid_zone {
+    cursor:pointer;
+    display:inline-block;
+    text-align: center;
+    font-size:10em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.grid_zone img {
+	width: 300px;
+	height: 300px;
+}
+
+.grid_zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
